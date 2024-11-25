@@ -7,18 +7,22 @@ import { HeaderComponent } from './includes/header/header.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { PromiseComponent } from './promise/promise.component';
 import { ObservableComponent } from './observable/observable.component';
+import { AsyncAwaitComponent } from './async-await/async-await.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     PromiseComponent,
-    ObservableComponent
+    ObservableComponent,
+    AsyncAwaitComponent
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
