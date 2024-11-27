@@ -7,4 +7,14 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
 
+  welcome_note = false;
+
+  constructor(){
+    this.welcome_note = true;
+  }
+
+  show(){
+    this.welcome_note = false;
+  }
+
 }

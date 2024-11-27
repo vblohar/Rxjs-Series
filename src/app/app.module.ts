@@ -8,6 +8,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { PromiseComponent } from './promise/promise.component';
 import { ObservableComponent } from './observable/observable.component';
 import { AsyncAwaitComponent } from './async-await/async-await.component';
+import { FromEventComponent } from './observable/from-event/from-event.component';
+import { WelcomePageComponent } from './welcome-page/welcome-page.component';
 
 
 @NgModule({
@@ -16,7 +18,9 @@ import { AsyncAwaitComponent } from './async-await/async-await.component';
     HeaderComponent,
     PromiseComponent,
     ObservableComponent,
-    AsyncAwaitComponent
+    AsyncAwaitComponent,
+    FromEventComponent,
+    WelcomePageComponent
     
   ],
   imports: [
