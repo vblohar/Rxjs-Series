@@ -10,6 +10,8 @@ import { ObservableComponent } from './observable/observable.component';
 import { AsyncAwaitComponent } from './async-await/async-await.component';
 import { FromEventComponent } from './observable/from-event/from-event.component';
 import { WelcomePageComponent } from './welcome-page/welcome-page.component';
+import { IntervalComponent } from './observable/interval/interval.component';
+import { MainComponent } from './observable/main/main.component';
 
 
 @NgModule({
@@ -20,7 +22,9 @@ import { WelcomePageComponent } from './welcome-page/welcome-page.component';
     ObservableComponent,
     AsyncAwaitComponent,
     FromEventComponent,
-    WelcomePageComponent
+    WelcomePageComponent,
+    IntervalComponent,
+    MainComponent
     
   ],
   imports: [

@@ -1,5 +1,6 @@
 import { AfterViewInit, Component, ElementRef, ViewChild, viewChild } from '@angular/core';
 import { fromEvent } from 'rxjs';
+import { AppUtilityService } from '../../appServices/app-utility.service';
 
 @Component({
   selector: 'app-from-event',
@@ -12,21 +13,20 @@ export class FromEventComponent implements AfterViewInit {
   btnClick!: ElementRef;
 
   count = 1;
+
+  constructor(private appService: AppUtilityService){}
   
   ngAfterViewInit(): void {
     
     fromEvent(this.btnClick.nativeElement, 'click').subscribe(res=>{
       let countDone = 'video ' + this.count++;
-      this.print(countDone);
+
+      this.appService.print(countDone,'element1');
+      this.appService.print(countDone,'element');
     })
   }
 
-  print(count: string){
-    let el = document.createElement('li');
-    el.innerText = count;
-
-    document.getElementById('element')?.appendChild(el);
-  }
+  
 
 }
  
