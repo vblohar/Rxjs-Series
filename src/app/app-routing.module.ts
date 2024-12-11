@@ -7,6 +7,7 @@ import { FromEventComponent } from './observable/from-event/from-event.component
 import { WelcomePageComponent } from './welcome-page/welcome-page.component';
 import { IntervalComponent } from './observable/interval/interval.component';
 import { MainComponent } from './observable/main/main.component';
+import { OfFromComponent } from './observable/of-from/of-from.component';
 
 const routes: Routes = [
   {path:'', component:WelcomePageComponent, },
@@ -14,7 +15,8 @@ const routes: Routes = [
   {path: 'async-await', component: AsyncAwaitComponent},
   {path: 'observable', component: ObservableComponent,children:[
     {path: 'main', component:MainComponent},
-    {path: 'interval', component:IntervalComponent}
+    {path: 'interval', component:IntervalComponent},
+    {path: 'of-from', component:OfFromComponent}
   ]},
   {path: 'from-event', component: FromEventComponent},
   {path:'welcome', component:WelcomePageComponent}
